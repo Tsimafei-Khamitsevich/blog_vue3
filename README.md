@@ -1,4 +1,6 @@
-# blog
+# blog frontend
+
+В проекте использован https://jsonplaceholder.typicode.com/ api.
 
 ## Project setup
 ```
