@@ -34,7 +34,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-, "src/stores/comment.js", "src/stores/comment.js", "src/stores/post.js"  ],
+, "src/stores/comment.ts", "src/stores/comment.ts", "src/stores/post.js"  ],
   "exclude": [
     "node_modules"
   ]

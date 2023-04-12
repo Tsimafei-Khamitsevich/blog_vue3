@@ -1,12 +1,12 @@
-<script>
-  
+<script lang="ts">
+  import { defineComponent } from "vue";
   import router from "@/router";
 
-  export default {
+  export default defineComponent ({
     data() {
       return {
-        title: null,
-        body: null,
+        title: '',
+        body: '',
       };
     },
     methods: {
@@ -25,12 +25,11 @@
       })
       .then((response) => response.json());
       
-      alert("Post "+ data.title+" is created");
+      alert("Пост '"+ data.title+"' создан");
       await router.push('/') 
-  
       }
     }
-  };
+  });
 
 </script>
 

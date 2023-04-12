@@ -1,7 +1,6 @@
-<script setup>
+<script setup lang="ts">
   import { useRoute } from 'vue-router'
   import { storeToRefs } from 'pinia'
- 
   import { usePostStore } from '../stores/post'
   import SinglePost from '../components/SinglePost.vue'
 
@@ -21,11 +20,6 @@
       <div class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
 
         <div class="bg-slate-100 bg-opacity-50 rounded mx-auto">
-          
-        <img v-bind:src="photo.url">
-        
-        <br>
-        
         <SinglePost :post="post" :photo="photo" ></SinglePost>
       </div>
     </div>
